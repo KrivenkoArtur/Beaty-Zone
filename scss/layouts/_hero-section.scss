@@ -1,0 +1,37 @@
+.hero-section {
+  width: 100%;
+  height: 100vh;
+  background-image: url("/images/hero-section.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 130px 0px;
+
+  &__uptitle {
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--color-primary-darkblue);
+  }
+
+  &__title {
+    max-width: 530px;
+    font-family: "Play", sans-serif;
+    font-size: 140px;
+    font-weight: 700;
+    color: var(--color-primary-blue);
+    margin-bottom: 40px;
+    line-height: 114px;
+  }
+
+  &__btn {
+    margin-bottom: 14px;
+  }
+
+  &__text {
+    display: block;
+    max-width: 240px;
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--color-secondary-darkgrey);
+    text-align: center;
+  }
+}

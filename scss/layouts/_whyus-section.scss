@@ -1,0 +1,20 @@
+.whyus {
+  background: linear-gradient(
+    180deg,
+    rgba(43, 127, 255, 0.2) 10%,
+    rgba(43, 127, 255, 0) 90%,
+    rgba(43, 127, 255, 0) 100%
+  );
+
+  padding: 48px 0px;
+}
+
+.whyus-title {
+  max-width: 440px;
+  margin: 0px auto 48px auto;
+}
+
+.whyus-container {
+  display: flex;
+  justify-content: space-between;
+}
