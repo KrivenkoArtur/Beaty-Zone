@@ -1,0 +1,89 @@
+.backdrop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(1, 31, 74, 0.4);
+  transition: opacity 0.3s, visibility 0.3s;
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.modal {
+  position: relative;
+  width: 724px;
+  max-width: 100%;
+  padding: 42px 144px;
+  border-radius: 48px;
+  background-color: var(--color-primary-darkblue);
+  background-image: url(/images/form-background.svg);
+
+  &__button-close {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 42px;
+    right: 42px;
+    width: 32px;
+    height: 32px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+
+    & img {
+      width: 32px;
+      height: 32px;
+    }
+  }
+
+  &__title {
+    color: var(--color-primary-white);
+    font-size: 64px;
+    font-weight: 700;
+    font-family: "Play", sans-serif;
+    text-align: center;
+    line-height: 100%;
+    margin-bottom: 40px;
+  }
+}
+
+.modal-form {
+  &__title {
+    display: block;
+    margin: 0 auto;
+    width: 274px;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 100%;
+    color: var(--color-primary-white);
+    margin-bottom: 32px;
+  }
+
+  &__field {
+    margin: 0 auto 24px auto;
+    width: 310px;
+  }
+
+  &__terms {
+    width: 214px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: var(--color-secondary-grey);
+  }
+
+  &__link {
+    color: inherit;
+  }
+}
