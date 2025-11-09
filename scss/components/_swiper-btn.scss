@@ -1,0 +1,23 @@
+.products-container__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border: 1px solid var(--color-primary-darkblue);
+  border-radius: 50%;
+  background-color: transparent;
+  cursor: pointer;
+  fill: #000;
+  transition: all 0.1s linear;
+
+  &:hover {
+    border-color: var(--color-primary-white);
+    background-color: var(--color-primary-blue);
+    fill: var(--color-primary-white);
+  }
+
+  &.next {
+    transform: rotate(180deg);
+  }
+}

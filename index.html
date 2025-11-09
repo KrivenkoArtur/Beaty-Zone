@@ -13,6 +13,11 @@
       href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&family=Roboto:wght@100..900&display=swap"
       rel="stylesheet"
     />
+    <!-- Swiper.js -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <header class="header">
@@ -141,17 +146,17 @@
           <h2 class="products-title title">
             Наші <span class="title-accent">процедури</span>
           </h2>
-          <div class="products-container">
-            <button class="products-container__btn prev" type="button">
+          <div class="products-section__slider">
+            <button
+              class="products-section__btn carousel-btn prev"
+              type="button"
+            >
               <svg
-                class="icon-arrow"
                 version="1.1"
                 xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
+                width="1229"
+                height="1024"
                 viewBox="0 0 1229 1024"
-                aria-hidden="true"
-                focusable="false"
               >
                 <g id="icomoon-ignore"></g>
                 <path
@@ -159,27 +164,74 @@
                 ></path>
               </svg>
             </button>
-            <div class="products-container__cards">
-              <div class="products-card">
-                <img src="./images/products-1.jpg" alt="" />
-              </div>
-              <div class="products-card">
-                <img src="./images/products-2.jpg" alt="" />
-              </div>
-              <div class="products-card">
-                <img src="./images/products-3.jpg" alt="" />
+            <div class="products-section__container swiper-container">
+              <ul class="products-section__list swiper-wrapper">
+                <li class="swiper-slide">
+                  <article class="products-card">
+                    <img
+                      src="./images/products-1.jpg"
+                      alt=""
+                      class="products-card__img"
+                    />
+                    <div class="products-card__text">
+                      <p>Маски для обличчя</p>
+                    </div>
+                  </article>
+                </li>
+                <li class="swiper-slide">
+                  <article class="products-card">
+                    <img
+                      src="./images/products-2.jpg"
+                      alt=""
+                      class="products-card__img"
+                    />
+                    <div class="products-card__text">
+                      <p>Маски для обличчя</p>
+                    </div>
+                  </article>
+                </li>
+                <li class="swiper-slide">
+                  <article class="products-card">
+                    <img
+                      src="./images/products-3.jpg"
+                      alt=""
+                      class="products-card__img"
+                    />
+                    <div class="products-card__text">
+                      <p>Маски для обличчя</p>
+                    </div>
+                  </article>
+                </li>
+                <li class="swiper-slide">
+                  <article class="products-card">
+                    <img
+                      src="./images/products-3.jpg"
+                      alt=""
+                      class="products-card__img"
+                    />
+                    <div class="products-card__text">
+                      <p>Маски для обличчя</p>
+                    </div>
+                  </article>
+                </li>
+              </ul>
+              <div class="pagination">
+                <span class="pagination__button"></span>
+                <span class="pagination__button"></span>
+                <span class="pagination__button"></span>
+                <span class="pagination__button"></span>
               </div>
             </div>
-            <button class="products-container__btn next" type="button">
+            <button
+              class="products-section__btn carousel-btn next"
+              type="button"
+            >
               <svg
-                class="icon-arrow"
                 version="1.1"
                 xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
+                width="1229"
+                height="1024"
                 viewBox="0 0 1229 1024"
-                aria-hidden="true"
-                focusable="false"
               >
                 <g id="icomoon-ignore"></g>
                 <path
@@ -417,5 +469,8 @@
 
     <!-- Modal-menu js -->
     <script src="./js/modal-menu.js"></script>
+    <!-- Swiper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="./js/swiper.js"></script>
   </body>
 </html>
