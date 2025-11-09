@@ -25,7 +25,7 @@
             <li><a class="link" href="#transform">Про нас</a></li>
             <li><a class="link" href="#whyus">Чому ми</a></li>
             <li><a class="link" href="#products">Наші процедури</a></li>
-            <li><a class="link" href="#">Контакти</a></li>
+            <li><a class="link" href="#findus">Контакти</a></li>
           </ul>
           <ul class="header-container__social">
             <li>
@@ -187,16 +187,77 @@
         </div>
       </div>
     </section>
-    <section class="findus">
+    <section class="findus" id="findus">
       <div class="container">
-        <h2 class="findus-title title">Як нас знайти</h2>
+        <h2 class="findus-title title">
+          Як нас <span class="title-accent">знайти</span>
+        </h2>
         <div class="findus-container">
-          <div class="findus-container__map"></div>
+          <div class="findus-container__map">
+            <iframe
+              class="findus-map"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.9398834337735!2d30.513257987093887!3d50.442220414716054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cef8b5f6338d%3A0x25c7f06ad686451c!2z0LHRg9C70YzQstCw0YAg0KLQsNGA0LDRgdCwINCo0LXQstGH0LXQvdC60LAsIDUsINCa0LjRl9CyLCDQo9C60YDQsNGX0L3QsCwgMDIwMDA!5e0!3m2!1suk!2sno!4v1762689164584!5m2!1suk!2sno"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
           <div class="findus-container__form">
-            <span class="findus-form__title"
-              >Запишіться безкоштовно та отримайте подарунок</span
-            >
-            <form name="findus-section__form" autocomplete="off"></form>
+            <form name="form-section" autocomplete="off">
+              <span class="form-section__title"
+                >Запишіться <span class="title-accent">безкоштовно</span> та
+                отримайте подарунок</span
+              >
+              <div class="form-section__field input">
+                <label class="input-label visually-hidden" for="user-name"
+                  >Ім'я</label
+                >
+                <input
+                  class="input-control"
+                  type="text"
+                  name="user-name"
+                  id="user-name"
+                  placeholder="Ваше ім'я та прізвище"
+                  required
+                />
+              </div>
+              <div class="form-section__field input">
+                <label class="input-label visually-hidden" for="user-tel"
+                  >Телефон</label
+                >
+                <input
+                  class="input-control"
+                  type="tel"
+                  name="user-tel"
+                  id="user-tel"
+                  placeholder="Ваш номер телефону"
+                  required
+                  pattern="^\+[0-9]{12}"
+                />
+              </div>
+              <div class="form-section__field input">
+                <label class="input-label visually-hidden" for="user-email"
+                  >Електронна пошта</label
+                >
+                <input
+                  class="input-control"
+                  type="text"
+                  name="user-email"
+                  id="user-email"
+                  placeholder="Ваша електронна пошта"
+                  required
+                />
+              </div>
+              <button class="form-section__button" type="submit">
+                Записатись безкоштовно
+              </button>
+              <p class="form-terms">
+                Натискаючи на кнопку я погоджуюсь
+                <a class="form-terms__link" href="#"
+                  >з політикою конфіденційності</a
+                >
+              </p>
+            </form>
           </div>
         </div>
       </div>
