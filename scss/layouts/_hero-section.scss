@@ -4,26 +4,45 @@
   background-image: url("/images/hero-section.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center center;
   padding: 130px 0px;
+
+  @media screen and (max-width: $bp-desktop) {
+    text-align: center;
+    padding: 70px 0px;
+  }
 
   &__uptitle {
     font-size: 18px;
     font-weight: 400;
     color: var(--color-primary-darkblue);
+
+    @media screen and (max-width: $bp-desktop) {
+      font-size: 12px;
+    }
   }
 
   &__title {
-    max-width: 530px;
     font-family: "Play", sans-serif;
     font-size: 140px;
     font-weight: 700;
     color: var(--color-primary-blue);
     margin-bottom: 40px;
     line-height: 114px;
+
+    @media screen and (max-width: $bp-desktop) {
+      font-size: 54px;
+      line-height: 46px;
+      margin-bottom: 32px;
+    }
   }
 
   &__btn {
     margin-bottom: 14px;
+
+    @media screen and (max-width: $bp-desktop) {
+      margin: 0 auto 8px auto;
+    }
   }
 
   &__text {
@@ -33,5 +52,9 @@
     font-weight: 400;
     color: var(--color-secondary-darkgrey);
     text-align: center;
+
+    @media screen and (max-width: $bp-desktop) {
+      margin: 0 auto;
+    }
   }
 }
