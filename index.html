@@ -22,39 +22,39 @@
   <body>
     <header class="header">
       <div class="container">
-        <div class="header-container">
-          <a href="#"
-            ><img src="./images/logo.svg" alt="Логотип компанії Beaty Zone"
-          /></a>
-          <ul class="header-container__nav">
-            <li><a class="link" href="#transform">Про нас</a></li>
-            <li><a class="link" href="#whyus">Чому ми</a></li>
-            <li><a class="link" href="#products">Наші процедури</a></li>
-            <li><a class="link" href="#findus">Контакти</a></li>
-          </ul>
-          <ul class="header-container__social">
-            <li>
-              <a href="#"
-                ><img
-                  src="./images/icon-phone.svg"
-                  alt="Іконка для дзвінку до каомпанії"
-              /></a>
-            </li>
-            <li>
-              <a href="#"
-                ><img
-                  src="./images/icon-facebook.svg"
-                  alt="Іконка програми Facebook"
-              /></a>
-            </li>
-            <li>
-              <a href="#"
-                ><img
-                  src="./images/icon-instagram.svg"
-                  alt="Іконка програми Instagram"
-              /></a>
-            </li>
-          </ul>
+        <div class="header__container">
+          <a href="#" class="header-nav__logo">
+            <img src="./images/logo.svg" alt="Логотип компанії Beaty Zone" />
+          </a>
+          <nav class="header-nav">
+            <ul class="header__menu">
+              <li class="link"><a class="link" href="#">Про нас</a></li>
+              <li class="link"><a class="link" href="#">Чому ми</a></li>
+              <li class="link"><a class="link" href="#">Наші процедури</a></li>
+              <li class="link"><a class="link" href="#">Контакти</a></li>
+            </ul>
+            <ul class="header__menu-social">
+              <li class="social-link">
+                <a href="#">
+                  <img src="./images/icon-phone.svg" alt="" />
+                </a>
+              </li>
+              <li class="social-link">
+                <a href="#">
+                  <img src="./images/icon-facebook.svg" alt="" />
+                </a>
+              </li>
+              <li class="social-link">
+                <a href="#">
+                  <img src="./images/icon-instagram.svg" alt="" />
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <button class="header__burger menu-btn-open" type="button">
+            <img src="./images/menu.svg" alt="" />
+          </button>
+          <div class="mobile-menu"></div>
         </div>
       </div>
     </header>
@@ -466,6 +466,8 @@
       </div>
     </div>
 
+    <!-- Mobile-menu -->
+    <script src="./js/mobile-menu.js"></script>
     <!-- Modal-menu js -->
     <script src="./js/modal-menu.js"></script>
     <!-- Swiper.js -->
