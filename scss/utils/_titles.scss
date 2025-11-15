@@ -5,6 +5,11 @@
   text-align: center;
   line-height: 100%;
   color: var(--color-primary-darkblue);
+
+  @media screen and (max-width: $bp-desktop) {
+    font-size: 32px;
+    font-weight: 500;
+  }
 }
 
 .title-accent {

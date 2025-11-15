@@ -1,13 +1,27 @@
 .whyus {
   padding: 48px 0px;
+
+  @media screen and (max-width: $bp-desktop) {
+    padding: 20px 0px;
+  }
 }
 
 .whyus-title {
   max-width: 440px;
   margin: 0px auto 48px auto;
+
+  @media screen and (max-width: $bp-desktop) {
+    margin: 0px auto 24px auto;
+  }
 }
 
 .whyus-container {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+
+  @media screen and (max-width: $bp-desktop) {
+    gap: 12px;
+    justify-content: center;
+  }
 }

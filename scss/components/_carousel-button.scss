@@ -12,6 +12,10 @@
   cursor: pointer;
   transition: all 0.1s linear;
 
+  @media screen and (max-width: $bp-desktop) {
+    display: none;
+  }
+
   &.next {
     transform: rotate(180deg);
   }

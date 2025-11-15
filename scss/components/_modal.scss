@@ -9,6 +9,10 @@
   bottom: 0;
   background-color: rgba(1, 31, 74, 0.4);
   transition: opacity 0.3s, visibility 0.3s;
+
+  @media screen and (max-width: $bp-desktop) {
+    padding: 20px 10px;
+  }
 }
 
 .backdrop.is-hidden {
@@ -26,6 +30,11 @@
   background-color: var(--color-primary-darkblue);
   background-image: url(/images/form-background.svg);
 
+  @media screen and (max-width: $bp-desktop) {
+    width: 100%;
+    padding: 50px 20px;
+  }
+
   &__button-close {
     position: absolute;
     display: flex;
@@ -38,6 +47,11 @@
     background: transparent;
     border: none;
     cursor: pointer;
+
+    @media screen and (max-width: $bp-desktop) {
+      top: 15px;
+      right: 15px;
+    }
 
     & img {
       width: 32px;
@@ -53,24 +67,40 @@
     text-align: center;
     line-height: 100%;
     margin-bottom: 40px;
+
+    @media screen and (max-width: $bp-desktop) {
+      font-size: 32px;
+      font-weight: 500;
+      margin-bottom: 10px;
+    }
   }
 }
 
 .modal-form {
   &__title {
     display: block;
-    margin: 0 auto;
+    margin: 0 auto 32px auto;
+    text-align: center;
     width: 274px;
     font-size: 22px;
     font-weight: 600;
     line-height: 100%;
     color: var(--color-primary-white);
-    margin-bottom: 32px;
+
+    @media screen and (max-width: $bp-desktop) {
+      font-size: 18px;
+      margin: 0 auto 18px auto;
+    }
   }
 
   &__field {
     margin: 0 auto 24px auto;
     width: 310px;
+
+    @media screen and (max-width: $bp-desktop) {
+      width: 100%;
+      margin: 0 auto 16px auto;
+    }
   }
 
   &__terms {

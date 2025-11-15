@@ -1,9 +1,17 @@
 .products {
   padding: 48px 0px;
+
+  @media screen and (max-width: $bp-desktop) {
+    padding: 20px 0px;
+  }
 }
 
 .products-title {
   margin-bottom: 48px;
+
+  @media screen and (max-width: $bp-desktop) {
+    margin-bottom: 24px;
+  }
 }
 
 .products-section__slider {

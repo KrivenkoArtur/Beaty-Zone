@@ -5,6 +5,10 @@
     max-width: 270px;
     font-size: 22px;
     font-weight: 600;
+
+    @media screen and (max-width: $bp-desktop) {
+      margin: 0 auto 24px auto;
+    }
   }
 
   &__field {
@@ -22,6 +26,10 @@
     font-size: 18px;
     font-weight: 600;
     transition: all 0.1s linear;
+
+    @media screen and (max-width: $bp-desktop) {
+      font-size: 16px;
+    }
 
     &:hover {
       background-color: transparent;

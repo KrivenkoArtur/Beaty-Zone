@@ -1,10 +1,21 @@
 .transform {
   padding: 150px 0px;
+
+  @media screen and (max-width: $bp-desktop) {
+    padding: 20px 0px;
+  }
 }
 
 .transform-container {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+
+  &__img {
+    @media screen and (max-width: $bp-desktop) {
+      display: none;
+    }
+  }
 }
 
 .transform-title {
@@ -15,6 +26,12 @@
   line-height: 100%;
   color: var(--color-primary-darkblue);
   margin-bottom: 40px;
+
+  @media screen and (max-width: $bp-desktop) {
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 24px;
+  }
 
   & .accent {
     color: var(--color-primary-blue);
@@ -27,6 +44,11 @@
   font-weight: 400;
   color: var(--color-primary-darkblue);
   margin-bottom: 40px;
+
+  @media screen and (max-width: $bp-desktop) {
+    font-size: 18px;
+    margin-bottom: 16px;
+  }
 
   &:last-child {
     margin-bottom: 0;

@@ -5,21 +5,51 @@
   background-image: url(/images/footer-background.svg);
   background-repeat: no-repeat;
   background-size: cover;
+
+  @media screen and (max-width: $bp-desktop) {
+    padding: 32px 0px;
+  }
 }
 
 .footer-img {
   position: absolute;
   bottom: 0;
   right: 0;
+
+  @media screen and (max-width: $bp-desktop) {
+    display: none;
+  }
 }
 
 .footer-container {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+
+  @media screen and (max-width: $bp-desktop) {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  &__logo {
+    @media screen and (max-width: $bp-desktop) {
+      margin-bottom: 42px;
+    }
+  }
+}
+
+.footer-container__links.last {
+  @media screen and (max-width: $bp-desktop) {
+    display: none;
+  }
 }
 
 .footer-nav {
   color: var(--color-primary-white);
+
+  @media screen and (max-width: $bp-desktop) {
+    margin-bottom: 42px;
+  }
 
   & li {
     margin-bottom: 16px;
