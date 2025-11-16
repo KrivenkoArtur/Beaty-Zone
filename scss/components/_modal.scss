@@ -7,6 +7,7 @@
   right: 0;
   left: 0;
   bottom: 0;
+  width: 100%;
   background-color: rgba(1, 31, 74, 0.4);
   transition: opacity 0.3s, visibility 0.3s;
 
@@ -25,13 +26,14 @@
   position: relative;
   width: 724px;
   max-width: 100%;
+  height: 100%;
   padding: 42px 144px;
   border-radius: 48px;
+  overflow-x: hidden;
   background-color: var(--color-primary-darkblue);
   background-image: url(/images/form-background.svg);
 
   @media screen and (max-width: $bp-desktop) {
-    width: 100%;
     padding: 50px 20px;
   }
 

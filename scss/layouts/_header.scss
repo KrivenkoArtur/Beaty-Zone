@@ -13,9 +13,8 @@
 
   &__container {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    flex-grow: 1;
-    gap: 40px;
   }
 
   &__menu {
@@ -23,7 +22,6 @@
     justify-content: space-around;
     align-items: center;
     gap: 56px;
-    flex-grow: 1;
 
     @media screen and (max-width: $bp-desktop) {
       display: none;
@@ -35,7 +33,6 @@
     justify-content: space-around;
     align-items: center;
     gap: 32px;
-    flex-grow: 1;
 
     @media screen and (max-width: $bp-desktop) {
       display: none;
@@ -60,4 +57,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-grow: 1;
+
+  &__logo {
+    flex-grow: 1;
+  }
 }
